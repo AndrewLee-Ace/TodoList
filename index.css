@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(222, 245, 222);
+    height: 6em;
+}
+
+.header .edit {
+    /* position: relative; */
+    top: 1em;
+    /* text-align: center; */
+    text-decoration:overline;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list{
+    position: relative;
+    width: 25em;
+    height: 16em;;
+}
+
+.list li{
+    text-decoration: none;
+    list-style-type: none ;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.d-grid .btn{
+    background-color:rgb(190, 222, 255);
+    
+    
+}
+
+.body{
+    background-color:rgb(173, 227, 226);
+}
