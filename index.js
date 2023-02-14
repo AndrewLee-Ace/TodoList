@@ -1,39 +1,34 @@
-const tasks = document.getElementById('tasks')
+const tasks = document.getElementById("tasks");
 
-function addToList () {
-   const task = document.getElementById('text').value
 
-   if (task === ''){
-       alert('Please enter a task')
+function addToList() {
+    const task = document.getElementById("text").value;
 
-   }
-   else{
-       let input = document.createElement('input')
-        input.setAttribute('type',  'checkbox') 
-        input.setAttribute('id', 'defaultCheck1')
-        input.setAttribute('onclick','removeTask')
-        input.className = 'form-check-input'
+    if (task === "") {
+        alert("Please enter a task");
+    } else {
+        let inputDiv = document.createElement("div");
+
+        let input = document.createElement("input");
+        input.setAttribute("type", "text");
+        input.setAttribute("id", "defaultCheck1");
+        input.setAttribute("value", task);
         // console.log(input)
 
-        let label = document.createElement('label')
-        label.setAttribute('for', 'defaultCheck1')
-        label.className = 'form-check-label'
-        label.innerHTML = task
-        // console.log(label)
+        let btn = document.createElement("button");
+        btn.innerHTML = "complete!";
 
-        let list = document.createElement('li')
-        list.appendChild(input)
-        list.appendChild(label) 
-        
-        tasks.appendChild(list)
+        let list = document.createElement("li");
+        inputDiv.appendChild(list);
+        inputDiv.appendChild(btn);
+
+        list.appendChild(input);
+
+        tasks.appendChild(inputDiv);
+
+        btn.addEventListener("click", () => {
+            tasks.removeChild(inputDiv);
+        });
     }
 }
 
-function removeTask() {
-    document.querySelectorAll('li').forEach(task => {
-        if (task.checked){
-            console.log(task)
-            // task.remove
-        }
-    })
-}

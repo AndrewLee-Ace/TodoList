@@ -22,6 +22,12 @@
     height: 16em;;
 }
 
+.list button {
+    position: relative;
+    left: 15em;
+    bottom: 2em;
+}
+
 .list li{
     text-decoration: none;
     list-style-type: none ;
