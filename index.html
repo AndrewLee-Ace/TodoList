@@ -24,12 +24,31 @@
     </div>
 
     <div class="input-group input-group-sm">
-        <textarea class="form-control" aria-label="Add to List" id="text"></textarea>
+        <textarea class="form-control" aria-label="Add to List" id="text" placeholder="Input Task Here!"></textarea>
+        
+
         <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addToList()">
             Add to List
         </button>
     </div>
 
+    <div class="form-check form-check-inline" id="importance">
+        <input class="form-check-input" type="radio" id="radio1" value="basic" name="types" checked>
+        <label class="form-check-label" for="inlineCheckbox1">Basic</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="radio2" value="important" name="types">
+        <label class="form-check-label" for="inlineCheckbox2">Important</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="radio3" value="extreme" name="types">
+        <label class="form-check-label" for="inlineCheckbox3">Super Important</label>
+      </div>
+
+      <select id="day" name="day"></select>
+
+      <br><br><br><br><br>
+      
     <div class="form-check container">
         <div class="row">
             <div class="col">

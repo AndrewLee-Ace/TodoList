@@ -50,6 +50,18 @@
     
 }
 
+.basic {
+    border: 1px solid blue;
+}
+
+.important {
+    border: 1px solid orange;
+}
+
+.extreme {
+    border: 1px solid red;
+}
+
 .body{
     background-color:rgb(173, 227, 226);
 }
