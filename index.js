@@ -1,5 +1,5 @@
 const tasks = document.getElementById("tasks");
-
+const history = document.getElementById("history");
 
 function addToList() {
     const task = document.getElementById("text").value;
@@ -13,6 +13,7 @@ function addToList() {
         input.setAttribute("type", "text");
         input.setAttribute("id", "defaultCheck1");
         input.setAttribute("value", task);
+        input.setAttribute("readonly", true);
         // console.log(input)
 
         let btn = document.createElement("button");
@@ -28,6 +29,9 @@ function addToList() {
 
         btn.addEventListener("click", () => {
             tasks.removeChild(inputDiv);
+            history.appendChild(inputDiv);
+            inputDiv.removeChild(btn);
+
         });
     }
 }

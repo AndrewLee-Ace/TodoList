@@ -17,7 +17,6 @@
 }
 
 .list{
-    position: relative;
     width: 25em;
     height: 16em;;
 }
@@ -33,6 +32,16 @@
     list-style-type: none ;
     line-height: 2em;
     font-size: 1.2em;
+}
+
+.list #tasks {
+    position: relative;
+    right: 10px;
+}
+
+.list #history{
+    position: relative;
+    left: 10px;
 }
 
 .d-grid .btn{
